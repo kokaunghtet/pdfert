@@ -1,0 +1,25 @@
+{
+  "name": "pdfert",
+  "version": "1.0.0",
+  "description": "Terminal UI HTML to PDF converter",
+  "bin": {
+    "pdfert": "./bin/pdfert.js"
+  },
+  "scripts": {
+    "start": "node bin/pdfert.js"
+  },
+  "keywords": [
+    "pdf",
+    "html",
+    "converter",
+    "terminal",
+    "cli"
+  ],
+  "author": "Kaung Htet",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "inquirer": "^14.2.2",
+    "puppeteer": "^25.10.0"
+  }
+}
