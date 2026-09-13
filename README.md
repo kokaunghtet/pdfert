@@ -53,7 +53,21 @@ Navigate to any directory containing HTML files, then run:
 pdfert
 ```
 
-Use arrow keys to select a file and press Enter. The PDF will be saved in the same directory with the same filename (e.g., `page.html` → `page.pdf`).
+## Modification
+
+To rename the command from `pdfert` to something else:
+
+1. Change the bin entry in `package.json`:
+
+   ```json
+   "bin": {
+     "yourname": "./bin/pdfert.js"
+   }
+   ```
+
+2. Rename the file `bin/pdfert.js` to `bin/yourname.js`
+
+3. Re-run `npm link`
 
 ## Project Structure
 
@@ -70,10 +84,10 @@ pdfert/
 
 ## Dependencies
 
-| Package | Purpose |
-|---------|---------|
-| [puppeteer](https://github.com/puppeteer/puppeteer) | Headless Chrome for PDF rendering |
-| [inquirer](https://github.com/SBoudrias/Inquirer.js) | Interactive terminal prompts |
+| Package                                              | Purpose                           |
+| ---------------------------------------------------- | --------------------------------- |
+| [puppeteer](https://github.com/puppeteer/puppeteer)  | Headless Chrome for PDF rendering |
+| [inquirer](https://github.com/SBoudrias/Inquirer.js) | Interactive terminal prompts      |
 
 ## How It Works
 
