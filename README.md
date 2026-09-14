@@ -2,30 +2,6 @@
 
 > Terminal UI tool that converts HTML files to PDF with interactive file selection.
 
-## Demo
-
-```
-$ pdfert
-
-  pdfert — HTML to PDF converter
-
-? Select an HTML file to convert:
-❯ resume.html
-  cover-letter.html
-  report.html
-
-  Launching browser...
-  ✔ Converted successfully: resume.pdf
-```
-
-## Features
-
-- Interactive arrow-key file selection
-- Auto-scans current directory for `.html` files
-- High-fidelity rendering (CSS backgrounds, zero margins, A4 format)
-- Clean terminal output with colored status messages
-- Error handling for missing HTML files
-
 ## Prerequisites
 
 - [Node.js](https://nodejs.org/) v18 or higher
@@ -52,6 +28,30 @@ Navigate to any directory containing HTML files, then run:
 ```bash
 pdfert
 ```
+
+## Demo
+
+```
+$ pdfert
+
+  pdfert — HTML to PDF converter
+
+? Select an HTML file to convert:
+❯ resume.html
+  cover-letter.html
+  report.html
+
+  Launching browser...
+  ✔ Converted successfully: resume.pdf
+```
+
+## Features
+
+- Interactive arrow-key file selection
+- Auto-scans current directory for `.html` files
+- High-fidelity rendering (CSS backgrounds, zero margins, A4 format)
+- Clean terminal output with colored status messages
+- Error handling for missing HTML files
 
 ## Modification
 
