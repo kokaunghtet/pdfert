@@ -11,7 +11,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/pdfert.git
+git clone https://github.com/kokaunghtet/pdfert.git
 cd pdfert
 
 # Install dependencies
