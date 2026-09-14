@@ -12,3 +12,16 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.gif
+*.svg
+*.bmp
+*.tiff
+*.ico
+
+*.html
+*.pdf
