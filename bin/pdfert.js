@@ -33,7 +33,10 @@ async function main() {
         theme: {
           style: {
             keysHelpTip: (keys) => {
-              return keys.map(([key, action]) => `${key} ${action}`).join(" • ") + " • ctrl+c exit";
+              return (
+                keys.map(([key, action]) => `${key} ${action}`).join(" • ") +
+                " • ctrl+c exit"
+              );
             },
           },
         },
@@ -44,8 +47,12 @@ async function main() {
     console.log("  \x1b[36mLaunching browser...\x1b[0m");
 
     const outputFile = await convertToPdf(selectedFile);
-    console.log("  \x1b[32m✔ Converted successfully: " + outputFile + "\x1b[0m");
+    console.log(
+      "  \x1b[32m✔ Converted successfully: " + outputFile + "\x1b[0m",
+    );
     console.log("");
+
+    console.log("  \x1b[36mCleanup complete. Browser closed.\x1b[0m");
   } catch (err) {
     if (err.name === "ExitPromptError") {
       console.log("");
